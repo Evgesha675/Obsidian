@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 332.5
   },
   "right": {
     "id": "0cf19dfd893387b4",
@@ -150,9 +150,13 @@
   },
   "active": "9784fa2327e0dbbd",
   "lastOpenFiles": [
-    "i.webp",
+    "images/i 2.webp",
+    "images/i 1.webp",
     "Учёба/obsidian/Посмотрим что это за хрень.md",
     "Учёба/obsidian/Безымянная Kanban-доска.md",
+    "images/i.webp",
+    "images",
+    "Безымянная Kanban-доска.md",
     "README.md",
     "Учёба/obsidian",
     "Учёба"
