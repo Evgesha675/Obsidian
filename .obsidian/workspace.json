@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Учёба/obsidian/Посмотрим что это за хрень.md",
+                "file": "Учёба/PHP/Без названия.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Учёба/obsidian/Посмотрим что это за хрень.md",
+                "file": "Учёба/PHP/Без названия.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Учёба/obsidian/Посмотрим что это за хрень.md",
+                "file": "Учёба/PHP/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Учёба/obsidian/Посмотрим что это за хрень.md"
+                "file": "Учёба/PHP/Без названия.md"
               }
             }
           }
@@ -150,11 +150,14 @@
   },
   "active": "9784fa2327e0dbbd",
   "lastOpenFiles": [
-    "images/i 2.webp",
-    "images/i 1.webp",
     "Учёба/obsidian/Посмотрим что это за хрень.md",
+    "Учёба/PHP/Без названия.md",
+    "Учёба/PHP",
+    "Учёба/SQL",
     "Учёба/obsidian/Безымянная Kanban-доска.md",
+    "images/i 1.webp",
     "images/i.webp",
+    "images/i 2.webp",
     "images",
     "Безымянная Kanban-доска.md",
     "README.md",
