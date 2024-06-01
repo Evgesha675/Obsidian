@@ -144,13 +144,16 @@
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
-      "yet-another-obsidian-synchronizer:YAOS": false
+      "yet-another-obsidian-synchronizer:YAOS": false,
+      "obsidian-kanban:Создать новую доску": false
     }
   },
-  "active": "feb708039ef289f8",
+  "active": "9784fa2327e0dbbd",
   "lastOpenFiles": [
-    "README.md",
+    "i.webp",
     "Учёба/obsidian/Посмотрим что это за хрень.md",
+    "Учёба/obsidian/Безымянная Kanban-доска.md",
+    "README.md",
     "Учёба/obsidian",
     "Учёба"
   ]
