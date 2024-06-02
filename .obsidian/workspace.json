@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Учёба/PHP/Без названия.md",
+                "file": "Учёба/SQL/Упражнение 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Учёба/PHP/Без названия.md",
+                "file": "Учёба/SQL/Упражнение 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Учёба/PHP/Без названия.md",
+                "file": "Учёба/SQL/Упражнение 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Учёба/PHP/Без названия.md"
+                "file": "Учёба/SQL/Упражнение 1.md"
               }
             }
           }
@@ -150,8 +150,18 @@
   },
   "active": "9784fa2327e0dbbd",
   "lastOpenFiles": [
-    "Учёба/obsidian/Посмотрим что это за хрень.md",
     "Учёба/PHP/Без названия.md",
+    "Учёба/SQL/Упражнение 1.md",
+    "Учёба/SQL/~$ражнение 1 — копия.docx",
+    "Учёба/SQL/Упражнение 1 — копия.docx",
+    "Учёба/SQL/~$ражнение 1 — копия.doc",
+    "Учёба/SQL/Упражнение 1 — копия.doc",
+    "Учёба/SQL/Упражнение 1 — копия.txt",
+    "Учёба/SQL/Упражнение 1 — копия.md",
+    "images/Pasted image 20240602184313.png",
+    "images/Pasted image 20240602184300.png",
+    "Учёба/s",
+    "Учёба/obsidian/Посмотрим что это за хрень.md",
     "Учёба/PHP",
     "Учёба/SQL",
     "Учёба/obsidian/Безымянная Kanban-доска.md",
@@ -161,7 +171,6 @@
     "images",
     "Безымянная Kanban-доска.md",
     "README.md",
-    "Учёба/obsidian",
-    "Учёба"
+    "Учёба/obsidian"
   ]
 }
