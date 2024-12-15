@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "52a1f7cb1632202b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e4cce8e59825943",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "973d465cec56e70f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Учёба/Издателькое дело/Х-ки шрифта.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Х-ки шрифта"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e76e786f21de0ee1",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd746bbcbfabac62",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "386be732323ab79f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a527fcef8f046cb5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "163f5d55ff202a61",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c93c11bd278661d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6e23bb1ac946059",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bf41bf1d53c3912",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "9d98f09bd7275d7d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1127efa9895856b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5a83931e80b58390",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-kanban:Create new board": false,
+      "github-sync:Sync with Remote": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "yet-another-obsidian-synchronizer:YAOS": false,
+      "cicada-sync:CI-SYNC": false
+    }
+  },
+  "active": "973d465cec56e70f",
+  "lastOpenFiles": [
+    "Учёба/Теория систем и системный анализ.md",
+    "README.md",
+    "_fit/Учёба/SQL/Упражнение 1.md",
+    "_fit/Учёба/SQL",
+    "_fit/Учёба",
+    "_fit",
+    "Учёба/backup.md",
+    "Учёба/SQL/Упражнение 1.md",
+    "Учёба/Дизайн графических пользовательских интерфейсов/b2c.md",
+    "Учёба/Дизайн графических пользовательских интерфейсов/Юзабилити.md",
+    "Учёба/Дизайн графических пользовательских интерфейсов/Тест Юзабилити сервиса Юла.md",
+    "Учёба/Курсовая работа/Предсказани свойств белков по их последовательности с помощью предобученных нейронных сетей.md",
+    "Учёба/Курсовая работа",
+    "Учёба/Издателькое дело/Х-ки шрифта.md",
+    "Учёба/Издателькое дело/Типы шрифтов.md",
+    "Учёба/Издателькое дело",
+    "Учёба/Дизайн графических пользовательских интерфейсов",
+    "Учёба/obsidian/Посмотрим что это за хрень.md",
+    "Учёба/obsidian/Безымянная Kanban-доска.md",
+    "Учёба/obsidian",
+    "Учёба/Untitled/13.11.2024.md",
+    "Учёба/Untitled",
+    "Учёба/SQL/Упражнение 1 — копия.docx",
+    "Учёба/SQL",
+    "Учёба/PHP/Без названия.md",
+    "{F57E9899-3E4F-43BE-9D0C-715C61113CDA}.png",
+    "{EAF43ACD-D2CB-477B-BC66-64ECFEF8703E}.png",
+    "{50B73C58-A86D-4DB6-8CD6-37678D07DC5D}.png",
+    "images/{F57E9899-3E4F-43BE-9D0C-715C61113CDA}.png",
+    "images/{F57E9899-3E4F-43BE-9D0C-715C61113CDA} 2.png",
+    "images/{F57E9899-3E4F-43BE-9D0C-715C61113CDA} 1.png",
+    "images/{EAF43ACD-D2CB-477B-BC66-64ECFEF8703E}.png",
+    "images/{EAF43ACD-D2CB-477B-BC66-64ECFEF8703E} 2.png",
+    "images/{EAF43ACD-D2CB-477B-BC66-64ECFEF8703E} 1.png",
+    "images/{50B73C58-A86D-4DB6-8CD6-37678D07DC5D}.png",
+    "images/13.11.2024.md",
+    "Obsidian/Учёба/obsidian/Посмотрим что это за хрень.md",
+    "Obsidian/Учёба/obsidian/Безымянная Kanban-доска.md",
+    "Obsidian/Учёба/SQL/Упражнение 1.md",
+    "Obsidian/Учёба/PHP/Без названия.md",
+    "13.11.2024.md",
+    "Welcome.md"
+  ]
+}
