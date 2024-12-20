@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Учёба/Издателькое дело/Х-ки шрифта.md",
+                "file": "Учёба/Теория систем и системный анализ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Х-ки шрифта"
+              "title": "Теория систем и системный анализ"
             }
           }
         ]
@@ -150,20 +150,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-kanban:Create new board": false,
-      "github-sync:Sync with Remote": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "yet-another-obsidian-synchronizer:YAOS": false,
-      "cicada-sync:CI-SYNC": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "973d465cec56e70f",
   "lastOpenFiles": [
+    "Учёба/Издателькое дело/Х-ки шрифта.md",
     "Учёба/Теория систем и системный анализ.md",
     "README.md",
     "_fit/Учёба/SQL/Упражнение 1.md",
@@ -177,7 +174,6 @@
     "Учёба/Дизайн графических пользовательских интерфейсов/Тест Юзабилити сервиса Юла.md",
     "Учёба/Курсовая работа/Предсказани свойств белков по их последовательности с помощью предобученных нейронных сетей.md",
     "Учёба/Курсовая работа",
-    "Учёба/Издателькое дело/Х-ки шрифта.md",
     "Учёба/Издателькое дело/Типы шрифтов.md",
     "Учёба/Издателькое дело",
     "Учёба/Дизайн графических пользовательских интерфейсов",
