@@ -1,0 +1,1790 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{Система}\\
+Понятие системы применяется в случаях, когда исследуемый предмет
+характеризуется как нечто сложное, о котором невозможно сразу дать
+полное определение или графическое представление. Существует множество
+форм и аспектов этого понятия.
+
+\textbf{Система} --- это совокупность элементов a(i)a(i)a(i) и связей
+или отношений r(j)r(j)r(j).\\
+Если не выполняется условие целостности, объект называют компонентом.
+Границы между системами и их элементами могут изменяться в зависимости
+от подхода к анализу объекта.
+
+\textbf{Связи} играют ключевую роль в обеспечении целостных свойств
+системы. С их помощью характеризуются структура системы в статике и ее
+функционирование в динамике. Связи ограничивают степень свободы
+элементов системы.
+
+Связи классифицируются по нескольким признакам:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{По направленности}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Направленные.
+  \item
+    Ненаправленные.
+  \end{itemize}
+\item
+  \textbf{По силе}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Сильные.
+  \item
+    Слабые.
+  \end{itemize}
+\item
+  \textbf{По типу}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Подчинения (например, отношения РОД → ВИД, ЦЕЛОЕ → ЧАСТЬ).
+  \item
+    Порождения (генетические).
+  \item
+    Равноправные или безразличные.
+  \item
+    Управляющие.
+  \end{itemize}
+\item
+  \textbf{По месту приложения}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Внутренние.
+  \item
+    Внешние.
+  \end{itemize}
+\item
+  \textbf{По направленности процессов}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Прямые.
+  \item
+    Обратные.
+  \end{itemize}
+\end{enumerate}
+
+\textbf{Обратные связи} имеют важное значение в моделировании систем.
+
+\begin{itemize}
+\tightlist
+\item
+  Положительная обратная связь сохраняет тенденцию изменения в системе.
+\item
+  Отрицательная обратная связь способствует поддержанию требуемого
+  значения параметров системы.
+\end{itemize}
+
+Обратные связи широко используются в технических устройствах, но их
+применение в организационной деятельности может быть сложнее. Для
+эффективного использования обратной связи необходимо:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Фиксировать рассогласования между требуемыми и текущими параметрами
+  системы.
+\item
+  Учитывать влияние всех элементов системы.
+\end{enumerate}
+
+Обратная связь является основой саморегулирования и развития систем. В
+сложных саморегулирующихся системах используются одновременно
+положительные и отрицательные обратные связи, что обеспечивает их
+устойчивость и адаптивность. \#\#\# \textbf{Структуры и формы
+представления системы}
+
+Системы можно представлять различными способами в зависимости от уровня
+детализации:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Перечисление элементов}\\
+  Простейший способ, где указываются только элементы системы, без
+  описания их взаимосвязей.
+\item
+  \textbf{Модель ``черного ящика''}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    В этой модели отсутствует информация о внутреннем устройстве
+    системы.
+  \item
+    Рассматриваются только входные и выходные связи с окружающей средой.
+  \item
+    Границы ``черного ящика'' признаются существующими, но их структура
+    и механизмы остаются неизвестными.
+  \item
+    Максимальная формализация ``черного ящика'' включает два множества:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      XXX --- множество входных переменных.
+    \item
+      YYY --- множество выходных переменных.\\
+      При этом взаимосвязи между XXX и YYY не фиксируются (иначе система
+      становится ``прозрачным ящиком'').
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\textbf{Пример:} Смартфон. Если нас интересует только его функции ввода
+(например, голосовые команды) и вывода (звук, изображение), внутренняя
+структура устройства может не рассматриваться.
+
+\subsubsection{\texorpdfstring{\textbf{Понятие малого
+бизнеса}}{Понятие малого бизнеса}}\label{ux43fux43eux43dux44fux442ux438ux435-ux43cux430ux43bux43eux433ux43e-ux431ux438ux437ux43dux435ux441ux430}
+
+\textbf{Входы} --- это ресурсы, клиенты, внешние условия (например,
+погода, климат, солнечная активность), поведение системы и влияние среды
+на систему.\\
+\textbf{Выходы} --- это влияние системы на среду, которое может быть
+выражено через изменения объектов или других элементов окружающего мира.
+
+Особую важность имеет определение цели системы, то есть ее выходов.
+Главная цель дополняется связанными целями, которые учитывают
+взаимодействие системы с объектами внешней среды.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Модель ``черного
+ящика''}}{Модель ``черного ящика''}}\label{ux43cux43eux434ux435ux43bux44c-ux447ux435ux440ux43dux43eux433ux43e-ux44fux449ux438ux43aux430}
+
+Модель ``черного ящика'' особенно полезна, а иногда и единственно
+возможна при исследовании сложных систем, например:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Психика человека}.
+\item
+  \textbf{Эффективность лекарств}.
+\end{itemize}
+
+В таких случаях доступ к внутреннему устройству системы затруднен, а
+выводы делаются исключительно на основании анализа входов и выходов.
+
+Модель ``черного ящика'' применяется, когда требуется изучить систему в
+ее обычной среде функционирования. Детализация этой модели приводит к
+\textbf{модели состава системы}, где система делится на подсистемы и
+элементы:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Система} → \textbf{Подсистема} → \textbf{Элементы}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Модель состава и структуры
+системы}}{Модель состава и структуры системы}}\label{ux43cux43eux434ux435ux43bux44c-ux441ux43eux441ux442ux430ux432ux430-ux438-ux441ux442ux440ux443ux43aux442ux443ux440ux44b-ux441ux438ux441ux442ux435ux43cux44b}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Модель состава}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Набор компонентов, из которых состоит система.
+  \item
+    Показывает подчиненные объекты и их функции.
+  \end{itemize}
+\item
+  \textbf{Модель структуры}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Множество связей между элементами системы.
+  \item
+    Отражает организацию системы, подчеркивая устойчивые и значимые
+    связи, которые обеспечивают ее существование и функциональность.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Структура
+системы}}{Структура системы}}\label{ux441ux442ux440ux443ux43aux442ux443ux440ux430-ux441ux438ux441ux442ux435ux43cux44b}
+
+\textbf{Структура} характеризует организацию системы и состоит из связей
+между элементами.
+
+\begin{itemize}
+\tightlist
+\item
+  В \textbf{простых системах} структура может быть очевидной и
+  неизменной.
+\item
+  В \textbf{сложных системах} структура отражает наиболее устойчивые
+  связи, которые обеспечивают существование системы и ее свойств.
+\end{itemize}
+
+\textbf{Структура может быть представлена}:
+
+\begin{itemize}
+\tightlist
+\item
+  Графически (например, диаграммы или схемы).
+\item
+  В матричной форме (таблицы взаимосвязей).
+\item
+  С помощью теории множеств или других формальных методов.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Элементы и
+подсистемы}}{Элементы и подсистемы}}\label{ux44dux43bux435ux43cux435ux43dux442ux44b-ux438-ux43fux43eux434ux441ux438ux441ux442ux435ux43cux44b}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Элемент системы}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Минимальная часть системы, рассматриваемая как единое целое в рамках
+    анализа.
+  \item
+    Не подлежит дальнейшему делению в данном контексте.
+  \end{itemize}
+\item
+  \textbf{Подсистема}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Часть системы с относительной целостностью.
+  \item
+    Подсистемы могут быть:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Основными} --- направленными на достижение общей цели.
+    \item
+      \textbf{Вспомогательными} --- поддерживающими стабильность и
+      эффективность всей системы. \#\#\# \textbf{Структуры системы и их
+      особенности}
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+На разных этапах анализа систему можно представлять с различными
+структурами, которые помогают в организации и упрощении работы с ее
+сложностью:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Иерархическая структура}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Представляет систему в виде уровней подчиненности.
+  \item
+    Используется для разделения сложного проекта на составные части.
+  \item
+    Важный аспект --- выделение уровня соподчиненности, который
+    определяет отношения между элементами на разных уровнях.
+  \item
+    Пример: управление организацией или проектом.
+  \item
+    Если нижний элемент подчиняется двум и более вершинам верхнего
+    уровня, это считается структурой со слабыми связями.
+  \end{itemize}
+
+  Особые классы иерархий:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{СТРАТЫ, слои и эшелоны} --- характеризуются разными
+    принципами связанности элементов и различными правами вышележащих
+    уровней в отношении нижележащих.
+  \end{itemize}
+
+  \textbf{Основная проблема при создании иерархии}: найти компромисс
+  между простотой описания, обеспечивающей целостное представление о
+  системе, и детализацией, которая отражает ее специфические
+  особенности.
+\item
+  \textbf{Сетевая структура}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Представляет декомпозицию системы во времени.
+  \item
+    Используется для отображения последовательности действий, этапов
+    деятельности или процесса функционирования.
+  \item
+    Пример: построение расписания или последовательности технологических
+    операций.
+  \end{itemize}
+\item
+  \textbf{Матричная структура}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Отображает взаимоотношения между смежными уровнями иерархии,
+    особенно со слабыми связями.
+  \item
+    Может быть многомерной, если одна или несколько осей представляют
+    собой иерархическую структуру.
+  \item
+    Пример: \textbf{матричная организационная структура}, которая
+    сочетает линейный, функциональный и программно-целевой принципы
+    управления.
+  \end{itemize}
+\item
+  \textbf{Структуры с произвольными связями}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Формируются на начальном этапе анализа.
+  \item
+    На этом этапе элементы системы делятся, устанавливаются всевозможные
+    связи, а затем на основе анализа создается более формализованная
+    структура.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Классификация
+структур}}{Классификация структур}}\label{ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux44f-ux441ux442ux440ux443ux43aux442ux443ux440}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Организационная иерархия}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Представляет многоцелевую иерархию, где подсистемы образуют
+    коалиции.
+  \item
+    Конфликты между подсистемами решаются вышестоящим эшелоном.
+  \end{itemize}
+\item
+  \textbf{Смешанная иерархия}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Включает как вертикальные, так и горизонтальные связи.
+  \item
+    Применяются все виды иерархий, что делает ее гибкой и подходящей для
+    сложных систем.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Функциональные системы и их
+состояние}}{Функциональные системы и их состояние}}\label{ux444ux443ux43dux43aux446ux438ux43eux43dux430ux43bux44cux43dux44bux435-ux441ux438ux441ux442ux435ux43cux44b-ux438-ux438ux445-ux441ux43eux441ux442ux43eux44fux43dux438ux435}
+
+Для функциональной системы ключевым элементом анализа является
+\textbf{состояние системы}.\\
+Состояние можно определить через:
+
+\begin{itemize}
+\tightlist
+\item
+  Входы и выходы.
+\item
+  Макропараметры системы (например, энергию, температуру, объем
+  ресурсов).
+\end{itemize}
+
+\textbf{Примеры состояний системы}:
+
+\begin{itemize}
+\tightlist
+\item
+  Состояние покоя.
+\item
+  Состояние равномерного прямолинейного движения.
+\end{itemize}
+
+Если система способна переходить из одного состояния в другое, говорят,
+что она обладает \textbf{поведением}. Анализ поведения системы включает:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Определение характера переходов.
+\item
+  Построение модели, где состояние TTT выражается как функция:
+  T=f(Tпредыдущее,Tуправление,Tвлияние)T = f(T\_\{\text{предыдущее}\},
+  T\_\{\text{управление}\},
+  T\_\{\text{влияние}\})T=f(Tпредыдущее\hspace{0pt},Tуправление\hspace{0pt},Tвлияние\hspace{0pt})
+\end{enumerate}
+
+Таким образом, поведение системы зависит от предыдущего состояния,
+управляющих воздействий и внешних факторов.
+
+\subsubsection{\texorpdfstring{\textbf{Состояние равновесия и
+устойчивости
+системы}}{Состояние равновесия и устойчивости системы}}\label{ux441ux43eux441ux442ux43eux44fux43dux438ux435-ux440ux430ux432ux43dux43eux432ux435ux441ux438ux44f-ux438-ux443ux441ux442ux43eux439ux447ux438ux432ux43eux441ux442ux438-ux441ux438ux441ux442ux435ux43cux44b}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Состояние равновесия}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Это способность системы при отсутствии внешних воздействий или при
+    постоянных влияниях сохранять свое поведение сколько угодно долго.
+  \end{itemize}
+\item
+  \textbf{Устойчивость системы}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Способность системы возвращаться к состоянию равновесия после
+    отклонения под воздействием внешних факторов.
+  \item
+    Если отклонение небольшое и система способна восстановить
+    равновесие, говорят об \textbf{устойчивом равновесии}.
+  \item
+    Процесс возвращения к равновесию может быть:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Колебательным} (с периодическими изменениями параметров).
+    \item
+      \textbf{Без колебаний} (плавный возврат).
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Классификация
+систем}}{Классификация систем}}\label{ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux44f-ux441ux438ux441ux442ux435ux43c}
+
+Системы можно разделить на классы по различным признакам. Классификация
+зависит от задач анализа и способа описания системы.
+
+\paragraph{\texorpdfstring{\textbf{Примеры
+классификаций:}}{Примеры классификаций:}}\label{ux43fux440ux438ux43cux435ux440ux44b-ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux439}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{По виду отображаемых объектов:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Биологические системы.
+  \item
+    Социальные системы.
+  \item
+    Технические системы.
+  \item
+    Экологические системы и др.
+  \end{itemize}
+\item
+  \textbf{По детерминированности:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Детерминированные} --- поведение системы однозначно
+    определяется начальными условиями и воздействиями.
+  \item
+    \textbf{Стохастические} --- поведение системы имеет элемент
+    случайности, который невозможно точно предсказать.
+  \end{itemize}
+\item
+  \textbf{По взаимодействию с внешней средой:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Открытые системы} --- обмениваются с окружающей средой
+    массой, энергией или информацией.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Частный случай: \textbf{информационно проницаемые системы},
+      обменивающиеся только информацией.
+    \end{itemize}
+  \item
+    \textbf{Закрытые системы} --- изолированы от внешней среды.
+  \end{itemize}
+
+  \textbf{Пример:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Тюрьма --- закрытая система.
+  \item
+    Офисное здание с интернет-доступом --- открытая информационно
+    проницаемая система.
+  \end{itemize}
+\item
+  \textbf{По абстракции:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Реальные} --- системы, существующие в физической форме.
+  \item
+    \textbf{Абстрактные} --- теоретические модели систем.
+  \end{itemize}
+\item
+  \textbf{По сложности:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Простые системы} --- легко описываются и моделируются.
+  \item
+    \textbf{Сложные системы}:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Большие сложные системы} --- трудно моделировать из-за
+      большого числа элементов и связей.
+    \item
+      \textbf{Сложные системы с недостатком информации} --- модели таких
+      систем не дают достаточных данных для эффективного управления.
+    \item
+      \textbf{Системы с активными элементами} --- системы, где
+      элементами выступают люди с индивидуальными ценностями и
+      мотивациями.
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Цели
+классификации}}{Цели классификации}}\label{ux446ux435ux43bux438-ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux438}
+
+Целью классификации является упрощение анализа систем, выбор подходящих
+методов и инструментов для моделирования.
+
+\paragraph{\texorpdfstring{\textbf{Особенности
+классификации:}}{Особенности классификации:}}\label{ux43eux441ux43eux431ux435ux43dux43dux43eux441ux442ux438-ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux438}
+
+\begin{itemize}
+\tightlist
+\item
+  Системы могут быть отнесены одновременно к нескольким классам, что
+  полезно при методах моделирования.
+\item
+  Классификации всегда относительны:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    В детерминированной системе может быть элемент стохастичности.
+  \item
+    В закрытой системе могут проявляться черты открытой (например, обмен
+    информацией). \#\#\# \textbf{Классификация систем по степени
+    организованности}
+  \end{itemize}
+\end{itemize}
+
+Системы можно классифицировать по степени их организованности, что
+позволяет выделить:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Хорошо организованные системы}.
+\item
+  \textbf{Плохо организованные системы (диффузные)}.
+\item
+  \textbf{Самоорганизующиеся системы}.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\paragraph{\texorpdfstring{\textbf{Хорошо организованные
+системы}}{Хорошо организованные системы}}\label{ux445ux43eux440ux43eux448ux43e-ux43eux440ux433ux430ux43dux438ux437ux43eux432ux430ux43dux43dux44bux435-ux441ux438ux441ux442ux435ux43cux44b}
+
+\begin{itemize}
+\item
+  Представление объекта или процесса в виде хорошо организованной
+  системы предполагает:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Определение элементов системы.
+  \item
+    Установление связей между элементами.
+  \item
+    Увязку связей с целями системы.
+  \end{enumerate}
+\item
+  В таких системах \textbf{задача выбора целей и средств их достижения}
+  не разделяется. Проблемы выражаются в виде критериев эффективности или
+  целевых функций, которые связывают цели со средствами их достижения.
+\item
+  Для описания применяются \textbf{наиболее существенные элементы и
+  связи}.
+\item
+  Пример:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    При создании модели хорошо организованной системы экспериментально
+    подтверждается правомерность детерминированных описаний.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Ограничения:}
+
+\begin{itemize}
+\tightlist
+\item
+  Хорошо организованные системы неэффективны для описания сложных
+  объектов с высокой степенью неопределенности.
+\item
+  Создание таких моделей требует значительных временных затрат, что
+  делает их малоэффективными для решения многокомпонентных задач.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\paragraph{\texorpdfstring{\textbf{Плохо организованные (диффузные)
+системы}}{Плохо организованные (диффузные) системы}}\label{ux43fux43bux43eux445ux43e-ux43eux440ux433ux430ux43dux438ux437ux43eux432ux430ux43dux43dux44bux435-ux434ux438ux444ux444ux443ux437ux43dux44bux435-ux441ux438ux441ux442ux435ux43cux44b}
+
+\begin{itemize}
+\tightlist
+\item
+  В диффузных системах \textbf{задача определения всех компонентов и
+  связей не ставится}.
+\item
+  Характеризуются набором макропараметров и закономерностей, выявленных
+  с помощью представительной выборки элементов объекта.
+\end{itemize}
+
+\textbf{Особенности:}
+
+\begin{itemize}
+\tightlist
+\item
+  Структурные связи и компоненты могут быть слабо выражены.
+\item
+  Анализ опирается на выявление закономерностей поведения системы, а не
+  на строгую детерминированность.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\paragraph{\texorpdfstring{\textbf{Самоорганизующиеся
+системы}}{Самоорганизующиеся системы}}\label{ux441ux430ux43cux43eux43eux440ux433ux430ux43dux438ux437ux443ux44eux449ux438ux435ux441ux44f-ux441ux438ux441ux442ux435ux43cux44b}
+
+\begin{itemize}
+\tightlist
+\item
+  Эти системы обладают высокой степенью неопределенности, а также
+  характеристиками:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Стохастическое поведение.
+  \item
+    Нестабильность параметров.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Основная идея самоорганизации:}\\
+Модель развивается и корректируется по мере накопления информации.
+
+\textbf{Этапы построения самоорганизующейся системы:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Разработка знаковой системы} для фиксации компонентов и
+  связей.
+\item
+  Преобразование полученного отображения по правилам декомпозиции для
+  выявления новых связей.
+\item
+  \textbf{Накопление информации} о системе.
+\item
+  \textbf{Повышение адекватности} модели за счет фиксации новых
+  элементов и связей.
+\end{enumerate}
+
+\textbf{Особенности подхода:}
+
+\begin{itemize}
+\tightlist
+\item
+  Модель становится механизмом развития системы.
+\item
+  Она может отключаться в стабильных условиях и активироваться при
+  изменениях среды.
+\item
+  Адекватность модели доказывается постепенно, путем оценки корректности
+  выделенных компонентов и связей.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Закономерности функционирования
+сложных систем с активными
+элементами}}{Закономерности функционирования сложных систем с активными элементами}}\label{ux437ux430ux43aux43eux43dux43eux43cux435ux440ux43dux43eux441ux442ux438-ux444ux443ux43dux43aux446ux438ux43eux43dux438ux440ux43eux432ux430ux43dux438ux44f-ux441ux43bux43eux436ux43dux44bux445-ux441ux438ux441ux442ux435ux43c-ux441-ux430ux43aux442ux438ux432ux43dux44bux43cux438-ux44dux43bux435ux43cux435ux43dux442ux430ux43cux438}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Целостность или эмерджентность}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Эмерджентность} --- это способность системы проявлять новые
+    свойства, которые не присущи отдельным ее компонентам.
+  \item
+    Эти свойства возникают в результате взаимодействия элементов и
+    связей внутри системы.
+  \item
+    Пример: коллективное поведение в социальном сообществе или работа
+    нейронной сети в мозге. \#\#\# \textbf{Метод анализа иерархий (МАИ)}
+  \end{itemize}
+\end{enumerate}
+
+Метод анализа иерархий позволяет:
+
+\begin{itemize}
+\tightlist
+\item
+  Представить сложные проблемы в виде \textbf{иерархической структуры}.
+\item
+  Оценить \textbf{приоритеты компонентов проблемы}.
+\item
+  Выбрать наиболее эффективное решение на основе численных оценок.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Основные этапы метода анализа
+иерархий}}{Основные этапы метода анализа иерархий}}\label{ux43eux441ux43dux43eux432ux43dux44bux435-ux44dux442ux430ux43fux44b-ux43cux435ux442ux43eux434ux430-ux430ux43dux430ux43bux438ux437ux430-ux438ux435ux440ux430ux440ux445ux438ux439}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Декомпозиция проблемы}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Проблема разбивается на составляющие элементы, организованные в
+    иерархическую структуру:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Верхний уровень --- \textbf{цель}.
+    \item
+      Промежуточные уровни --- \textbf{критерии}.
+    \item
+      Нижний уровень --- \textbf{альтернативы решений}.
+    \end{itemize}
+  \item
+    Пример: Построение иерархии для выбора жилья.
+  \end{itemize}
+\item
+  \textbf{Сравнение элементов}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Проводится \textbf{попарное сравнение элементов} на каждом уровне
+    иерархии.
+  \item
+    Оценивается \textbf{интенсивность взаимодействия} элементов с
+    использованием шкалы Саати (9-балльной шкалы).
+  \end{itemize}
+\item
+  \textbf{Расчет приоритетов}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    На основе матриц попарных сравнений вычисляются \textbf{веса
+    критериев} и \textbf{приоритеты альтернатив}.
+  \item
+    Используются собственные векторы и значения матриц.
+  \end{itemize}
+\item
+  \textbf{Синтез решений}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    На основе вычисленных приоритетов проводится выбор
+    \textbf{оптимальной альтернативы}.
+  \end{itemize}
+\item
+  \textbf{Анализ согласованности (ОС)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Вычисляется коэффициент согласованности (CI) и отношение
+    согласованности (CR).
+  \item
+    Если CR превышает допустимое значение, оценки необходимо
+    пересмотреть.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Основные принципы метода
+Саати}}{Основные принципы метода Саати}}\label{ux43eux441ux43dux43eux432ux43dux44bux435-ux43fux440ux438ux43dux446ux438ux43fux44b-ux43cux435ux442ux43eux434ux430-ux441ux430ux430ux442ux438}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Принцип идентичности и декомпозиции}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Проблема структурируется в виде иерархии или сети.
+  \end{itemize}
+\item
+  \textbf{Принцип дискриминации}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Обеспечение различимости элементов для оценки.
+  \end{itemize}
+\item
+  \textbf{Принцип сравнительных суждений}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Попарное сравнение элементов по заданным критериям.
+  \end{itemize}
+\item
+  \textbf{Принцип синтезирования}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Объединение приоритетов для выбора оптимального решения.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Структуры и типы
+иерархий}}{Структуры и типы иерархий}}\label{ux441ux442ux440ux443ux43aux442ux443ux440ux44b-ux438-ux442ux438ux43fux44b-ux438ux435ux440ux430ux440ux445ux438ux439}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Простая иерархия}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Древовидная структура: цель → критерии → альтернативы.
+  \item
+    Пример: выбор лучшего проекта.
+  \end{itemize}
+\item
+  \textbf{Китайский ящик (модульная операция)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Подразумевает модульное разделение задач с возможностью вложенности.
+  \end{itemize}
+\item
+  \textbf{Полная иерархия}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Каждый элемент одного уровня связан с каждым элементом уровня ниже.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Попарное сравнение и
+матрицы}}{Попарное сравнение и матрицы}}\label{ux43fux43eux43fux430ux440ux43dux43eux435-ux441ux440ux430ux432ux43dux435ux43dux438ux435-ux438-ux43cux430ux442ux440ux438ux446ux44b}
+
+\begin{itemize}
+\item
+  Для оценки элементов строится \textbf{матрица попарных сравнений}:
+
+  Если aija\_\{ij\}aij\hspace{0pt} --- значение предпочтения элемента
+  iii над jjj, то aji=1aija\_\{ji\} =
+  \frac{1}{a_{ij}}aji\hspace{0pt}=aij\hspace{0pt}1\hspace{0pt}.
+\item
+  Матрица обратносимметрична. На ее основе:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Вычисляется \textbf{собственный вектор матрицы} (определяет
+    приоритеты).
+  \item
+    Нормализуется собственный вектор так, чтобы сумма всех значений
+    равнялась 1.
+  \end{itemize}
+\item
+  Для проверки согласованности матрицы используется:
+
+  \begin{itemize}
+  \item
+    \textbf{Индекс согласованности (CI):}
+
+    CI=λmax−nn−1CI =
+    \frac{\lambda_{max} - n}{n - 1}CI=n−1λmax\hspace{0pt}−n\hspace{0pt}
+
+    где λmax\lambda\_\{max\}λmax\hspace{0pt} --- максимальное
+    собственное значение матрицы, nnn --- размер матрицы.
+  \item
+    \textbf{Отношение согласованности (CR):}
+
+    CR=CIRICR = \frac{CI}{RI}CR=RICI\hspace{0pt}
+
+    где RIRIRI --- случайный индекс согласованности (зависит от размера
+    матрицы).
+  \end{itemize}
+\item
+  Допустимые значения CR:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Для матрицы 3×3 --- не более 0.05.
+  \item
+    Для матрицы 5×5 --- не более 0.08.
+  \end{itemize}
+\end{itemize}
+
+Если значение CR превышает норму, оценки пересматриваются.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Преимущества метода анализа
+иерархий}}{Преимущества метода анализа иерархий}}\label{ux43fux440ux435ux438ux43cux443ux449ux435ux441ux442ux432ux430-ux43cux435ux442ux43eux434ux430-ux430ux43dux430ux43bux438ux437ux430-ux438ux435ux440ux430ux440ux445ux438ux439}
+
+\begin{itemize}
+\tightlist
+\item
+  Позволяет работать с качественными и количественными данными.
+\item
+  Обеспечивает структурированный подход к сложным задачам.
+\item
+  Включает проверку согласованности, что повышает надежность выводов.
+  \#\#\# \textbf{Проверка согласованности матриц сравнения}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Нарушение порядка согласованности}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Сравнения нарушают логику транзитивности:
+    a1\textgreater a2,  a2\textgreater a3,  a1\textgreater a3a\_\{1\}
+    \textgreater{} a\_\{2\},; a\_\{2\} \textgreater{} a\_\{3\},;
+    a\_\{1\} \textgreater{}
+    a\_\{3\}a1\hspace{0pt}\textgreater a2\hspace{0pt},a2\hspace{0pt}\textgreater a3\hspace{0pt},a1\hspace{0pt}\textgreater a3\hspace{0pt}
+  \item
+    Такое нарушение говорит о необходимости пересмотра сравнений.
+  \end{itemize}
+\item
+  \textbf{Нарушение численной согласованности}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Проверка на числовую согласованность по формуле:
+    aij⋅ajk=aika\_\{ij\} \cdot a\_\{jk\} =
+    a\_\{ik\}aij\hspace{0pt}⋅ajk\hspace{0pt}=aik\hspace{0pt}
+  \item
+    Если условие не выполняется, требуется уточнение оценок.
+  \end{itemize}
+\end{enumerate}
+
+\textbf{Закон иерархической непрерывности}:\\
+Элементы нижнего уровня должны быть попарно сравнимы по отношению ко
+всем элементам вышестоящего уровня иерархии.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Принципы системного анализа
+задач}}{Принципы системного анализа задач}}\label{ux43fux440ux438ux43dux446ux438ux43fux44b-ux441ux438ux441ux442ux435ux43cux43dux43eux433ux43e-ux430ux43dux430ux43bux438ux437ux430-ux437ux430ux434ux430ux447}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Определение связи цели со средствами}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Если закон связи неизвестен, используются гипотезы, предположения, а
+    также системные методы анализа для:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Формулирования цели.
+    \item
+      Выявления факторов, влияющих на достижение цели.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Формирование модели}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Перевод вербального описания в формальное представление:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Гибкость модели}: она должна быть подвержена
+      корректировке.
+    \item
+      Применение специальных приемов: мозговая атака, сценарный анализ,
+      экспертные оценки и т.д.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Постепенная формализация задач}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Постепенная детализация формального описания позволяет:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Проверить адекватность модели.
+    \item
+      Уменьшить число итераций для исключения неэффективных вариантов.
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Классификация методов
+моделирования}}{Классификация методов моделирования}}\label{ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux44f-ux43cux435ux442ux43eux434ux43eux432-ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux44f}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Методы формализованного представления систем (МФПС)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Используются для задач с формализуемыми параметрами.
+  \item
+    \textbf{Виды методов}:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Аналитические методы}: интегро-дифференциальные уравнения,
+      вариационные методы, теория игр, математическое программирование.
+    \item
+      \textbf{Статистические методы}: теория вероятностей,
+      математическая статистика.
+    \item
+      \textbf{Теоретико-множественные методы}.
+    \item
+      \textbf{Логические и лингвистические методы}.
+    \item
+      \textbf{Графические методы}.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Методы активизации интуиции специалистов (МАИС)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Направлены на выработку творческих решений:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Мозговой штурм.
+    \item
+      Метод Дельфи.
+    \item
+      Метод дерева целей.
+    \item
+      Прогнозный граф.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Методы постепенной формализации}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Структурно-лингвистическое моделирование}: используется для
+    описания сложных систем с учетом языковой структуры задачи.
+  \item
+    \textbf{Имитационно-динамическое моделирование}: для исследования
+    динамики сложных систем.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Особенности применения методов в
+экономике}}{Особенности применения методов в экономике}}\label{ux43eux441ux43eux431ux435ux43dux43dux43eux441ux442ux438-ux43fux440ux438ux43cux435ux43dux435ux43dux438ux44f-ux43cux435ux442ux43eux434ux43eux432-ux432-ux44dux43aux43eux43dux43eux43cux438ux43aux435}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Математическое программирование}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Оптимизация целевой функции с учетом ограничений.
+  \item
+    Требования к постановке задачи:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Указание целевой функции.
+    \item
+      Определение системы ограничений.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Статистические методы}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Повышение адекватности модели.
+  \item
+    Учет разнородных критериев (люди, ресурсы, финансовые ограничения).
+  \end{itemize}
+\item
+  \textbf{Потоковые модели}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Применяются для управления процессами производства и распределения.
+  \end{itemize}
+\item
+  \textbf{Модели управления запасами}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Оптимизация количества и частоты пополнения запасов.
+  \end{itemize}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Календарное
+планирование}}{Календарное планирование}}\label{ux43aux430ux43bux435ux43dux434ux430ux440ux43dux43eux435-ux43fux43bux430ux43dux438ux440ux43eux432ux430ux43dux438ux435}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Методы моделирования}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Аналитические.
+  \item
+    Теоретико-множественные.
+  \item
+    Лингвистические.
+  \item
+    Графические.
+  \end{itemize}
+\item
+  \textbf{Особенности планирования}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Учет ограничений ресурсов и времени.
+  \item
+    Оптимизация последовательности выполнения задач.
+  \end{itemize}
+\end{enumerate}
+
+\subsubsection{\texorpdfstring{\textbf{Классификация методов выбора в
+МФПС}}{Классификация методов выбора в МФПС}}\label{ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux44f-ux43cux435ux442ux43eux434ux43eux432-ux432ux44bux431ux43eux440ux430-ux432-ux43cux444ux43fux441}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Методы формализованного представления систем (МФПС)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Применяются для анализа и решения проблем, где параметры системы
+    можно формализовать.
+  \item
+    Включают аналитические, статистические, теоретико-множественные и
+    другие методы.
+  \end{itemize}
+\item
+  \textbf{Выбор методов по степени организованности системы}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Организованные системы: для них подходят строго формализованные
+    методы.
+  \item
+    Плохо организованные и самоорганизующиеся системы: требуют гибких и
+    менее формализованных подходов.
+  \end{itemize}
+\end{enumerate}
+
+\subsubsection{\texorpdfstring{\textbf{Методы активизации интуиции
+специалистов
+(МАИС)}}{Методы активизации интуиции специалистов (МАИС)}}\label{ux43cux435ux442ux43eux434ux44b-ux430ux43aux442ux438ux432ux438ux437ux430ux446ux438ux438-ux438ux43dux442ux443ux438ux446ux438ux438-ux441ux43fux435ux446ux438ux430ux43bux438ux441ux442ux43eux432-ux43cux430ux438ux441}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Эвристический синтез}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ориентирован на усиление качеств экспертного мышления через
+    творческие методы.
+  \end{itemize}
+\item
+  \textbf{Классификация эвристических методов}:
+
+  \begin{itemize}
+  \item
+    \textbf{Методы ненаправленного синтеза}:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Аналогия}: поиск решений в аналогичных областях.
+    \item
+      \textbf{Инверсия}: изменение восприятия задачи через перестановку
+      или переворот.
+    \item
+      \textbf{Эмпатия}: вовлечение себя в контекст исследуемой системы
+      для понимания взаимодействий.
+    \item
+      \textbf{Идеализация}: моделирование идеального решения, которое
+      помогает выявить недочеты в реальных сценариях.
+    \end{itemize}
+  \item
+    \textbf{Методы направленного синтеза}:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Мозговой штурм}: групповая генерация идей.
+    \item
+      \textbf{Метод гирлянд}: последовательное развитие идей.
+    \item
+      \textbf{Синептика}: комбинирование разнородных идей для создания
+      новых решений.
+    \item
+      \textbf{Морфологический анализ}: разложение проблемы на элементы и
+      их комбинации для поиска решений.
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\subsubsection{\texorpdfstring{\textbf{Примеры и активизация творческого
+мышления}}{Примеры и активизация творческого мышления}}\label{ux43fux440ux438ux43cux435ux440ux44b-ux438-ux430ux43aux442ux438ux432ux438ux437ux430ux446ux438ux44f-ux442ux432ux43eux440ux447ux435ux441ux43aux43eux433ux43e-ux43cux44bux448ux43bux435ux43dux438ux44f}
+
+\begin{itemize}
+\item
+  \textbf{Правила для активизации идей}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Правило 24-х}: фиксация идей, возникающих в течение суток.
+  \item
+    \textbf{Правило 25-и}: генерация не менее 25 идей для решения
+    задачи.
+  \item
+    \textbf{Правило 26-и}: использование подсказок (например, слова на
+    буквы алфавита) для поиска ассоциаций и идей.
+  \end{itemize}
+\item
+  \textbf{Примеры применения}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ситуация с хиппи в США в 60-е годы показывает, как творческие и
+    нестандартные подходы могут приводить к неожиданным результатам
+    (например, использование ЛСД как культурного феномена).
+  \item
+    Пример с бизнесом: человек, использующий ведро гнилых яблок как
+    элемент декора, чтобы пробудить ностальгию и создать ассоциации.
+    \#\#\# \textbf{Основные понятия и принципы}
+  \end{itemize}
+\item
+  \textbf{Противоречия}: фиксируют несоответствия между потребностями
+  системы и её возможностями, выявляют области, где необходимо улучшение
+  или изменение.
+\item
+  \textbf{Идеальный конечный результат}: гипотетическое решение, к
+  которому следует стремиться. Этот результат используется для отбора
+  наиболее подходящих решений, так как лучший вариант будет тот, который
+  максимально приближен к идеальному.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Классификация методов
+эвристического синтеза по ведущему
+эффекту}}{Классификация методов эвристического синтеза по ведущему эффекту}}\label{ux43aux43bux430ux441ux441ux438ux444ux438ux43aux430ux446ux438ux44f-ux43cux435ux442ux43eux434ux43eux432-ux44dux432ux440ux438ux441ux442ux438ux447ux435ux441ux43aux43eux433ux43e-ux441ux438ux43dux442ux435ux437ux430-ux43fux43e-ux432ux435ux434ux443ux449ux435ux43cux443-ux44dux444ux444ux435ux43aux442ux443}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Методы коллективной творческой работы}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Основной принцип: коллективное мышление зачастую эффективнее суммы
+    индивидуальных решений.
+  \item
+    Примеры методов: мозговой штурм, конференции идей, синептика, метод
+    коллективного блокнота.
+  \end{itemize}
+\item
+  \textbf{Методы анализа комплексных решений}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Основной принцип: анализ решений, полученных с помощью разных
+    методов.
+  \item
+    Примеры методов: морфологический анализ и синтез, метод порядочных
+    признаков, метод десятичных матриц.
+  \end{itemize}
+\item
+  \textbf{Методы ассоциативного мышления}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Основной принцип: использование ассоциаций и аналогий для поиска
+    решений.
+  \item
+    Примеры методов: метод факальных объектов, метод гирлянд случайных
+    ассоциаций.
+  \end{itemize}
+\item
+  \textbf{Методы разрешения противоречий}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Основной принцип: использование эвристических приемов для поиска
+    решений.
+  \item
+    Примеры методов: алгоритм решения изобретательских задач (АРИЗ),
+    библиотека/фонд эвристических приемов.
+  \end{itemize}
+\end{enumerate}
+
+\subsubsection{\texorpdfstring{\textbf{Методы эвристического
+синтеза}}{Методы эвристического синтеза}}\label{ux43cux435ux442ux43eux434ux44b-ux44dux432ux440ux438ux441ux442ux438ux447ux435ux441ux43aux43eux433ux43e-ux441ux438ux43dux442ux435ux437ux430}
+
+\begin{itemize}
+\item
+  \textbf{Эвристические приемы}: это методы поиска решений, включающие
+  творческий подход и интуицию. Примеры: аналогия, инверсия, эмпатия,
+  идеализация.
+\item
+  \textbf{Мозговой штурм}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Основные правила}: разделение стадии генерации идей и их
+    обсуждения. На этапе генерации идей критика запрещена, чтобы не
+    прерывать творческий поток.
+  \item
+    \textbf{Руководитель}: должен стимулировать как можно больше
+    вариантов решений.
+  \item
+    \textbf{Эффективность}: подходит для несложных задач, когда
+    участники обладают необходимой информацией. Для сложных задач может
+    потребоваться 400-500 идей, что достигается через несколько сессий.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Модификации мозгового
+штурма}}{Модификации мозгового штурма}}\label{ux43cux43eux434ux438ux444ux438ux43aux430ux446ux438ux438-ux43cux43eux437ux433ux43eux432ux43eux433ux43e-ux448ux442ux443ux440ux43cux430}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Индивидуальный мозговой штурм}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Выполняется одним человеком, который сначала генерирует идеи, а
+    затем их оценивает.
+  \item
+    Длительность сессии: 3-10 минут.
+  \end{itemize}
+\item
+  \textbf{Массовый мозговой штурм}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Проводится в большой аудитории, участники делятся на группы по 6-8
+    человек.
+  \item
+    Длительность первого этапа: 15-20 минут.
+  \end{itemize}
+\item
+  \textbf{Двойной мозговой штурм}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Совмещает генерацию идей и доброжелательную критику.
+  \end{itemize}
+\item
+  \textbf{Обратный мозговой штурм}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Особое внимание уделяется критике идей, что помогает улучшить
+    предложения.
+  \end{itemize}
+\item
+  \textbf{Конференции идей (КИ)}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Отличаются от мозгового штурма темпом работы и допустимостью
+    критики.
+  \item
+    Участие сотрудников, которые тесно связаны с проблемой, способствует
+    генерации уникальных идей.
+  \end{itemize}
+\item
+  \textbf{Конференция 66}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Деление большого коллектива на группы по 6 человек для
+    мини-конференции, где обсуждают конкретную проблему в течение 6
+    минут.
+  \end{itemize}
+\end{enumerate}
+
+\subsubsection{\texorpdfstring{\textbf{Коллективная генерация идей
+(КГИ)}}{Коллективная генерация идей (КГИ)}}\label{ux43aux43eux43bux43bux435ux43aux442ux438ux432ux43dux430ux44f-ux433ux435ux43dux435ux440ux430ux446ux438ux44f-ux438ux434ux435ux439-ux43aux433ux438}
+
+\begin{itemize}
+\tightlist
+\item
+  Метод, направленный на совместное обсуждение и разработку идей группой
+  специалистов.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Эвристические приемы: примеры и
+использование}}{Эвристические приемы: примеры и использование}}\label{ux44dux432ux440ux438ux441ux442ux438ux447ux435ux441ux43aux438ux435-ux43fux440ux438ux435ux43cux44b-ux43fux440ux438ux43cux435ux440ux44b-ux438-ux438ux441ux43fux43eux43bux44cux437ux43eux432ux430ux43dux438ux435}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Метод аналогии}: использование существующих решений из других
+  областей для нахождения новых идей.
+\item
+  \textbf{Метод инверсии}: изменение восприятия задачи через переворот и
+  перестановку.
+\item
+  \textbf{Метод эмпатии}: исследователь погружается в контекст системы,
+  чтобы лучше понять её потребности.
+\item
+  \textbf{Метод идеализации}: моделирование идеального решения для
+  нахождения оптимальных реальных решений.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Методы ассоциации и
+аналогии}}{Методы ассоциации и аналогии}}\label{ux43cux435ux442ux43eux434ux44b-ux430ux441ux441ux43eux446ux438ux430ux446ux438ux438-ux438-ux430ux43dux430ux43bux43eux433ux438ux438}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Метод факальных объектов}: используется перенос признаков
+  случайно выбранных объектов на тот, который требуется улучшить.
+  Пример: анализ птицы для создания более эффективного летательного
+  аппарата.
+\item
+  \textbf{Метод случайных ассоциаций}: основан на матрице связей между
+  объектами и их признаками. В этой матрице элемент Cij=1C\_\{ij\} =
+  1Cij\hspace{0pt}=1 указывает на наличие признака jjj у объекта iii;
+  Cij=0C\_\{ij\} = 0Cij\hspace{0pt}=0 --- его отсутствие.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Синектика}}{Синектика}}\label{ux441ux438ux43dux435ux43aux442ux438ux43aux430}
+
+\begin{itemize}
+\tightlist
+\item
+  Это метод, который помогает находить решения, отказавшись от
+  традиционных подходов. Он включает в себя использование интуиции и
+  нестандартного мышления, что позволяет выходить за рамки привычного.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Метод контроля
+вопросов}}{Метод контроля вопросов}}\label{ux43cux435ux442ux43eux434-ux43aux43eux43dux442ux440ux43eux43bux44f-ux432ux43eux43fux440ux43eux441ux43eux432}
+
+\begin{itemize}
+\tightlist
+\item
+  Основной принцип --- задавать направленные вопросы, которые направляют
+  исследователя к новому пониманию проблемы. Метод Озборна выделяет 9
+  групп вопросов, например:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Какое новое применение системе можно придумать?
+  \item
+    Какие возможные модификации функций?
+  \item
+    Что можно изменить в системе, чтобы улучшить её работу?
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Метод
+сценариев}}{Метод сценариев}}\label{ux43cux435ux442ux43eux434-ux441ux446ux435ux43dux430ux440ux438ux435ux432}
+
+\begin{itemize}
+\tightlist
+\item
+  Этот метод используется для подготовки и согласования представлений о
+  проблеме, часто реализуемый с помощью компьютеров. Ранее учитывались
+  строгие методики, но с течением времени они были упрощены.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Метод экспертных
+оценок}}{Метод экспертных оценок}}\label{ux43cux435ux442ux43eux434-ux44dux43aux441ux43fux435ux440ux442ux43dux44bux445-ux43eux446ux435ux43dux43eux43a}
+
+\begin{itemize}
+\tightlist
+\item
+  Предполагается, что неизвестная характеристика исследуемого явления
+  является случайной величиной, распределенной в пределах диапазона
+  оценок экспертов. Метод применяется, когда есть достаточно информации
+  для экспертной оценки, и предполагается, что истинное значение
+  находится в пределах этих оценок.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Метод
+Дельфи}}{Метод Дельфи}}\label{ux43cux435ux442ux43eux434-ux434ux435ux43bux44cux444ux438}
+
+\begin{itemize}
+\tightlist
+\item
+  Разработан Хелмером для снижения влияния психологических факторов в
+  группе экспертов. Эксперты получают возможность ознакомиться с
+  мнениями и выводами других участников через цикл повторных опросов и
+  обратной связи, что помогает выработать более объективные решения.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Метод дерева
+целей}}{Метод дерева целей}}\label{ux43cux435ux442ux43eux434-ux434ux435ux440ux435ux432ux430-ux446ux435ux43bux435ux439}
+
+\begin{itemize}
+\tightlist
+\item
+  Применяется для представления иерархических структур. Дерево целей
+  помогает визуализировать цели и задачи, определяя связи между ними.
+  Это также может быть основой для построения дерева решений, что
+  упрощает процесс принятия решений.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Морфологические
+методы}}{Морфологические методы}}\label{ux43cux43eux440ux444ux43eux43bux43eux433ux438ux447ux435ux441ux43aux438ux435-ux43cux435ux442ux43eux434ux44b}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Основной принцип}: структура системы, разработанная Цвикки,
+  включает выделение ключевых элементов и их признаков. Затем
+  перечисляются возможные значения этих элементов, что позволяет
+  генерировать альтернативы через перебор всех сочетаний.
+\item
+  \textbf{Цели}:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Обеспечение равного интереса ко всем элементам структуры.
+  \item
+    Ликвидация ограничений для полной структуры.
+  \item
+    Точная формулировка проблемы.
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\textbf{Другие подходы
+Цвикки}:}{Другие подходы Цвикки:}}\label{ux434ux440ux443ux433ux438ux435-ux43fux43eux434ux445ux43eux434ux44b-ux446ux432ux438ux43aux43aux438}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Метод систематического поля (МСП)}: ищет решения на основе
+  ограниченного числа опорных знаний, включая факты, законы и
+  теоретические положения.
+\item
+  \textbf{Метод отрицания и конструирования (МОК)}: исследует проблему,
+  начиная с предположения её отсутствия и конструирует решения, исходя
+  из этого.
+\item
+  \textbf{Метод морфологического ящика (ММЯ)}: используется для анализа
+  всех возможных комбинаций характеристик.
+\item
+  \textbf{Метод экстремальных ситуаций (МЭС)}: рассматривает наихудшие
+  или наилучшие случаи для поиска оптимальных решений.
+\item
+  \textbf{Метод сопоставления совершенного с дефектным (МССД)}:
+  позволяет сравнивать идеальные решения с существующими, чтобы выявить
+  их недостатки и способы улучшения.
+\item
+\end{itemize}
+
+\end{document}
